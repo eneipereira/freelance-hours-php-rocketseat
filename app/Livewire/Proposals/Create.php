@@ -36,6 +36,10 @@ class Create extends Component
                 ['email' => $this->email],
                 ['hours' => $this->hours]
             );
+
+        $this->modal = false;
+
+        $this->dispatch('proposal::created');
     }
 
     public function render()
