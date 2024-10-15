@@ -11,7 +11,7 @@ class Create extends Component
     public Project $project;
 
     
-    public bool $modal = true;
+    public bool $modal = false;
     
     #[Validate(['required', 'email'])]
     public string $email = '';
